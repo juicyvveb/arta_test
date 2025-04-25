@@ -1,0 +1,48 @@
+@import url("./css/fonts.css");
+@import url("./css/variables.css");
+@import url("./css/mixins.css");
+@import url("./css/hero-bg.css");
+@import url("./css/header.css");
+@import url("./css/main.css");
+@import url("./css/features.css");
+@import url("./css/subscribtion.css");
+@import url("./css/actions.css");
+@import url("./css/footer.css");
+
+html {
+  font-size: 100%;
+  font-family: "SF Pro Display", "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+:lang(de) {
+  font-size: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --body-inline-padding: 1.5rem;
+  --body-block-padding: .5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  height: calc(var(--1svh, 1vh) * 100);
+  height: 100svh;
+  max-width: var(--14-pro-max-width);
+
+  padding: var(--body-block-padding) var(--body-inline-padding);
+  margin: auto;
+  overflow: hidden;
+}
+
+/* min height  = height of Iphone 8+ */
+@media screen and (min-height: 736px) {
+  body {
+    --body-block-padding: 2.375rem;
+  }
+}

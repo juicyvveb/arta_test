@@ -1,0 +1,41 @@
+.burger {
+    --burger-color: rgba(255, 255, 255);
+
+    position: absolute;
+    top: calc(var(--body-block-padding) + 1.875rem);
+    left: calc(var(--body-inline-padding) - 0.5rem);
+    z-index: 10;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .275rem;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: none;
+
+    .burger__item {
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+        background-color: var(--burger-color);
+        position: relative;
+        transform: rotate(-45deg);
+        opacity: .4;
+    }
+
+    .burger__item::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: inherit;
+        transform: rotate(90deg);
+    }
+}

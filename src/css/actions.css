@@ -1,0 +1,45 @@
+.actions {
+    width: min(430px, 100%);
+    display: grid;
+    grid-auto-rows: 56px;
+    gap: .5rem;
+    margin-top: .5rem;
+
+    .actions__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-inline: calc(24 / 16 * 1rem);
+        padding-block: calc(9 / 16 * 1rem);
+
+        border-radius: calc(100 / 16 * 1rem);
+        border: 1px solid var(--main-text-color);
+        background: var(--main-text-color);
+        color: rgba(7, 11, 51, 1);
+        font-weight: 590;
+        font-size: calc(20 / 16 * 1rem);
+        line-height: calc(24 / 16 * 1rem);
+        letter-spacing: 0px;
+        text-align: center;
+
+        .actions__item-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    button {
+        padding: 0;
+        background-color: unset;
+        border: 0;
+    }
+}
+
+/* min height  = height of Iphone 8+ */
+@media screen and (min-height: 736px) {
+    .actions {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,184 @@
+.subscribtion {
+  --badge-radius: 6.25rem;
+  --best-bg-color: rgba(26, 26, 26, 1);
+  --item-bg: rgba(255, 255, 255, 0.3024);
+  --pink: #fd94f4;
+  --light-blue:#01B4FF;
+  width: 100%;
+  margin-top: calc(25 / 16 * 1rem);
+  /* display: flex; */
+
+  display: grid;
+  grid-auto-rows: minmax(56px, auto);
+  /* grid-auto-rows: 56px; */
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .subscribtion__item {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    position: relative;
+
+    border-radius: calc(100 / 16 * 1rem);
+    border: 1px solid var(--main-text-color);
+    padding-block: calc(9 / 16 * 1rem);
+    padding-inline: calc(24 / 16 * 1rem) calc(56 / 16 * 1rem);
+    background: var(--item-bg);
+    transition: all 0.2s ease-in-out;
+
+    .subscribtion__item-title {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 100%;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      color: var(--main-text-color);
+    }
+
+    .subscribtion__item-desc {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .subscribtion__item-badge {
+      height: 100%;
+
+      color: var(--main-text-color);
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 0.81rem;
+      line-height: 102%;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      padding-inline: 1.375rem;
+      padding-block: 2px;
+
+      border-radius: var(--badge-radius);
+      background-color: var(--main-text-color);
+      z-index: 3;
+
+      color: black;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .subscribtion__item-badge-wrapper {
+      height: 1.1rem;
+      position: absolute;
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4959);
+      transition: all 0.2s ease-in-out;
+      border-radius: var(--badge-radius);
+    }
+
+    .subscribtion__item-badge-wrapper::after {
+      content: "";
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      z-index: -1;
+      border-radius: var(--badge-radius);
+      background-color: var(--main-text-color);
+    }
+  }
+
+  .subscribtion__item_active {
+    background: var(--best-bg-color);
+    .subscribtion__item-badge {
+      background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+      color: var(--main-text-color);
+    }
+
+    .subscribtion__item-badge-wrapper::after {
+      background: linear-gradient(270deg, #00b5ff 0%, #632af7 53.01%, #ff96f4 100%);
+    }
+  }
+
+  .subscribtion__item_active.subscribtion__item_best {
+    position: relative;
+    background: var(--best-bg-color);
+    transition: all 0.1s cubic-bezier(0, 0.65, 0.03, 1.03);
+    background: linear-gradient(var(--best-bg-color), var(--best-bg-color)) padding-box,
+      conic-gradient(
+          from 280deg,
+          var(--best-bg-color) 0deg 15deg,
+          var(--pink) 135deg 155deg,
+          var(--light-blue) 135deg 25deg,
+          var(--best-bg-color) 175deg 360deg
+        )
+        border-box;
+    border-color: transparent;
+  }
+
+
+  
+
+  .subscribtion__item-badge_hidden {
+    display: none;
+  }
+}
+
+/* min height  = height of Iphone 8+ */
+@media screen and (min-height: 736px) {
+  .subscribtion {
+    margin-top: 2.125rem;
+  }
+}
+
+@keyframes lightning {
+    from{
+        width: 0px;
+    }to{
+        min-width: 100%;
+    }
+}
+@keyframes border {
+    from {
+        background: linear-gradient(var(--best-bg-color), var(--best-bg-color)) padding-box,
+        conic-gradient(
+            from 270deg,
+            var(--best-bg-color) 0deg 15deg,
+            var(--pink) 135deg 155deg,
+            var(--light-blue) 135deg 25deg,
+            var(--best-bg-color) 175deg 360deg
+          )
+          border-box;
+    }
+
+    70%{
+        background: linear-gradient(var(--best-bg-color), var(--best-bg-color)) padding-box,
+        conic-gradient(
+            from 275deg,
+            var(--best-bg-color) 0deg 15deg,
+            var(--pink) 135deg 155deg,
+            var(--light-blue) 135deg 25deg,
+            var(--best-bg-color) 175deg 360deg
+          )
+          border-box;
+    }
+
+    to{
+        background: linear-gradient(var(--best-bg-color), var(--best-bg-color)) padding-box,
+        conic-gradient(
+            from 280deg,
+            var(--best-bg-color) 0deg 15deg,
+            var(--pink) 135deg 155deg,
+            var(--light-blue) 135deg 25deg,
+            var(--best-bg-color) 175deg 360deg
+          )
+          border-box;
+    }
+  }

@@ -1,0 +1,127 @@
+/* iphone SE, 8+ */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    container-type: inline-size;
+
+    .bg-image {
+        display: grid;
+        position: absolute;
+        top: -43%;
+        left: -10%;
+        grid-template-columns: repeat(4, 1fr);
+        transform: rotate(9deg);
+        grid-template-rows: repeat(8, 1fr);
+
+        grid-gap: .5rem;
+        background: linear-gradient(136.59deg, #DA28FF 3.34%, #7FCCFF 92.15%);
+        grid-template-areas:
+            "  .   img4    .  img11"
+            "img1 img4 img8 img11"
+            "img1 img5 img8 img12"
+            "img2 img5 img9 img12"
+            "img2 img6 img9 img13"
+            "img3 img6 img10 img13"
+            "img3 img7 img10 img14"
+            " .    img7   .    img14"
+        ;
+
+        .bg__image-block {
+            width: calc(109 / 375 * 100cqmin);
+            height: calc(184 / 667 * 100cqmax);
+
+            border-radius: calc(9 / 16 * 1rem);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+
+    .bg__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .bg__gradient_black {
+        background: linear-gradient(196.56deg, rgba(0, 0, 0, 9.5e-05) 10.43%, rgba(21, 5, 52, 0.641925) 30.66%, rgba(0, 0, 0, 0.855327) 37.66%, rgba(9, 1, 25, 0.95) 45.57%, rgba(0, 0, 0, 0.95) 77.38%, rgba(5, 1, 14, 0.95) 94.32%);
+    }
+
+    .bg__gradient_pink {
+        height: 20%;
+        background: linear-gradient(to bottom, rgba(214, 19, 252, 0.6194) 0%, rgba(214, 19, 252, 0.6194) 3%, rgba(214, 19, 252, 0) 100%);
+    }
+}
+
+
+/* grid areas */
+.bg {
+    .bg__image-block_1 {
+        grid-area: img1;
+    }
+
+    .bg__image-block_2 {
+        grid-area: img2;
+    }
+
+    .bg__image-block_3 {
+        grid-area: img3;
+    }
+
+    .bg__image-block_4 {
+        grid-area: img4;
+    }
+
+    .bg__image-block_5 {
+        grid-area: img5;
+    }
+
+    .bg__image-block_6 {
+        grid-area: img6;
+    }
+
+    .bg__image-block_7 {
+        grid-area: img7;
+    }
+
+    .bg__image-block_8 {
+        grid-area: img8;
+    }
+
+    .bg__image-block_9 {
+        grid-area: img9;
+    }
+
+    .bg__image-block_10 {
+        grid-area: img10;
+    }
+
+    .bg__image-block_11 {
+        grid-area: img11;
+    }
+
+    .bg__image-block_12 {
+        grid-area: img12;
+    }
+
+    .bg__image-block_13 {
+        grid-area: img13;
+    }
+
+    .bg__image-block_14 {
+        grid-area: img14;
+    }
+}

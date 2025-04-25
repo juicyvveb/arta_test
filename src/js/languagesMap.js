@@ -1,0 +1,1 @@
+export default {"de":"de.json","en":"en.json","es":"es.json","fr":"fr.json","ja":"ja.json","pt":"pt.json"}

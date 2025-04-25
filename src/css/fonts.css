@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/SFPRODISPLAYREGULAR.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/SFPRODISPLAYMEDIUM.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/SFPRODISPLAYBOLD.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: block;
+  font-optical-sizing: auto;
+}
