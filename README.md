@@ -1,15 +1,16 @@
-# "Arta_test" - A multilanguage test-project for Frontend-Developer position.
+# "Arta_test" - A multilingual test-project for a Frontend-Developer position.
 
 Project is configured by webpack, it's loaders and plugins.  
-Languages versions are stored in JSON-files.  
-For prepaering project to development or production you have to run some ***node scripts***.   
+Language versions are stored in JSON files.  
+To prepare the project for development or production, you need to run some ***Node.js scripts***.  
+
 ## Project technologies:
 - HTML
 - CCS
 - JS
 
-## Preparing scripts | Process images | Process languages:
-At first you need run ***imagemin.js*** and ***parse-lang-map.js*** files. By default they're running when you run <kbd>npm run dev</kbd> or <kbd>npm run build</kbd> commands.  
+## Setup scripts  | Image processing  | Language parsing:
+At first you need to run ***imagemin.js*** and ***parse-lang-map.js*** files. By default they're running when you run <kbd>npm run dev</kbd> or <kbd>npm run build</kbd> commands.  
 
 - <kbd>imagemin.js</kbd> - is a node.js script that compress saved original images and converts it to ***.webp*** format by default. It should approve the UX and web-page perfomance time. The converted images are stored in  <kbd>src/images/</kbd> path.
 
@@ -24,14 +25,15 @@ To build project you need run in console:
 2. <kbd>npm run build</kbd>  - run webpack in production mode
 
 ## Translation
-In text there are as ***static*** as ***{{dynamic}}*** text, that needs to get variables. Because of it there are two functions for each text-type.   
+The project supports both ***static*** and ***{{dynamic}}*** translations using variable placeholders.  
+There are two separate functions for each type of translation.  
 If the user-system language or lang-param in query string are not detected, then we put the page in english without translation, but anyway   translate function for ***{{dynamic}}*** text will be called.
 
 To implement dynamic translation in general the libraty <kbd>i18next</kbd> was used.
 
-## Authors feedback:
+## Author's feedback:
 
-👉🏻 It was interestning test-project. I have demonstrated my skills in HTML, CSS and JS, but also in Webpack.  
+👉🏻 This was interestning test-project. I demonstrated my skills not only in HTML, CSS, and JavaScript but also in Webpack configuration.   
 Some tasks in layout were quite heavy in my view, but it's good, this is a challenge for me. 😊 
 I'd be glade to hear some advice from you regarding some aspects 🤓.   
-In the rest I think i've developed a well project. Hope for feedback 😊
+Overall, I believe the result is a well-structured and functional project. Hope to hear from you soon! 😊
