@@ -1,7 +1,7 @@
 .subscribtion {
   --badge-radius: 6.25rem;
   --best-bg-color: rgba(26, 26, 26, 1);
-  --item-bg: rgba(255, 255, 255, 0.3024);
+  --item-bg: #4D4D4D;
   --pink: #fd94f4;
   --light-blue:#01B4FF;
   width: 100%;
@@ -44,6 +44,7 @@
       line-height: 100%;
       letter-spacing: 0px;
       color: rgba(255, 255, 255, 0.7);
+      text-align: left;
     }
 
     .subscribtion__item-badge {
